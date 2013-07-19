@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express();
-var buf = buf.toString(fs.ReadFileSync('index.html'));
+var buf = buf.toString(fs.readFileSync('index.html'));
 app.use(express.logger());
 
 app.get('/', function(request, response) {
