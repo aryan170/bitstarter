@@ -4,7 +4,7 @@ var buf = buf.toString(fs.ReadFileSync('index.html'));
 app.use(express.logger());
 
 app.get('/', function(request, response) {
-  response.send('buf');
+  response.send('Hello World');
 });
 
 var port = process.env.PORT || 5000;
